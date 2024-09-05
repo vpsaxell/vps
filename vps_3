@@ -63,7 +63,7 @@ _G.Mastery = {
 -- Setting / ตั้งค่าหลัก
 _G.Setting = {
     ['FPS Booster'] = true,
-    ['Auto Close Ui'] = true
+    ['Auto Close Ui'] = false
 }
 
 script_key="dDJyAgFLgySINfMKPuXWUPqlqeJdygYy";
