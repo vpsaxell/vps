@@ -13,7 +13,7 @@ getgenv().WebhookSetting = {
 }
 getgenv().PlayerSetting = {
     SafeMode = true,
-    SafeModeHealth = {4000,50},--Number And %, Start Safe Mode And Stop Safe Mode
+    SafeModeHealth = {4500,60},--Number And %, Start Safe Mode And Stop Safe Mode
     UseRaceV3 = true,
     SmartUseRaceV3 = true,
     DashIfV4 = true,
