@@ -1,0 +1,20 @@
+_G.CrewSettings = {
+    ["OwnBoat"] = "burnaxell", -- ชื่อคนที่มีเรือสำหรับดึงหัวใจ
+    ["Method"] = "SanguineArt", -- ใส่ SanguineArt เพื่อทำหมัด หรือใส่ CraftBoat สำหรับทำแค่เรือหรือดึงหัวใจ ไม่ใส่เลยคือทำหมัด ( ไม่ใส่เลยคือลบบรรทัดนี้ไม่ใช่ "" )
+    ["CrewMember"] = { -- ชื่อรหัสที่จะทำใส่ได้ 11 ตัว
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+    }
+}
+getgenv().Key = "MARU_NewM-VDWSLAS3YKBG9WM"
+getgenv().id = "823163528407547924"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MasterPClient/main/LoaderxP.lua"))()
