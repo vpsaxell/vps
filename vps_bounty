@@ -13,7 +13,7 @@ getgenv().WebhookSetting = {
 }
 getgenv().PlayerSetting = {
     SafeMode = true,
-    SafeModeHealth = {5000,70},--Number And %, Start Safe Mode And Stop Safe Mode
+    SafeModeHealth = {3000,75},--Number And %, Start Safe Mode And Stop Safe Mode
     UseRaceV3 = true,
     SmartUseRaceV3 = true,
     DashIfV4 = true,
@@ -141,7 +141,7 @@ getgenv().WeaponsSetting = {
     },
 }
 getgenv().Theme = { -- getgenv().Theme = false if you want to disable
-    OldTheme = false,
+    OldTheme = true,
     Name="Miko", --"Raiden","Ayaka","Hutao","Yelan","Miko","Nahida","Ganyu","Keqing","Nilou","Barbara","Zhongli","Layla"
     Custom={
             ["Enable"] = false,
