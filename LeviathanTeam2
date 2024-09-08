@@ -1,8 +1,8 @@
 _G.CrewSettings = {
-    ["OwnBoat"] = "burnaxell", -- ชื่อคนที่มีเรือสำหรับดึงหัวใจ
+    ["OwnBoat"] = "nrayoisanu", -- ชื่อคนที่มีเรือสำหรับดึงหัวใจ
     ["Method"] = "SanguineArt", -- ใส่ SanguineArt เพื่อทำหมัด หรือใส่ CraftBoat สำหรับทำแค่เรือหรือดึงหัวใจ ไม่ใส่เลยคือทำหมัด ( ไม่ใส่เลยคือลบบรรทัดนี้ไม่ใช่ "" )
     ["CrewMember"] = { -- ชื่อรหัสที่จะทำใส่ได้ 11 ตัว
-        "akreunc7278",
+        "melhsu057",
         "siednon6410",
         "napojul2830",
         "swamfit4160",
