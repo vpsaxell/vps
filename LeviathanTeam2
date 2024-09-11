@@ -32,7 +32,7 @@ repeat task.wait() until #game:GetService("Players"):GetPlayers() >= 12
 
 PlayerInsert()
 
-if #_G.CrewSettings["CrewMember"] >= 12 then
+if #_G.CrewSettings["CrewMember"] >= 11 then
     print("Kondisi terpenuhi")
     getgenv().Key = "MARU_NewM-VDWSLAS3YKBG9WM"
     getgenv().id = "823163528407547924"
