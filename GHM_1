@@ -29,8 +29,8 @@ _G.Fruits_Settings = { -- ตั้งค่าผล
     ['Select_Fruits'] = {"Flame-Flame", "Ice-Ice", "Quake-Quake", "Light-Light", "Dark-Dark", "Spider-Spider", "Rumble-Rumble", "Magma-Magma", "Buddha-Buddha"} -- กินหรือซื้อตอนไม่มีผล
 }
 _G.Quests_Settings = { -- ตั้งค่าเควสหลักๆ
-    ['Rainbow_Haki'] = true,
-    ["MusketeerHat"] = true,
+    ['Rainbow_Haki'] = false,
+    ["MusketeerHat"] = false,
     ["PullLever"] = true,
     ['DoughQuests_Mirror'] = {
         ['Enabled'] = true,
