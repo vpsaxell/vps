@@ -67,8 +67,7 @@ _G.FarmMastery_Settings = {
     ['Select_Swords'] = {
         ["AutoSettings"] = true, -- ถ้าเปิดอันนี้มันจะเลือกดาบให้เองหรือฟาร์มทุกดาบนั่นเอง
         ["ManualSettings"] = { -- ถ้าปรับ AutoSettings เป็น false มันจะฟาร์มดาบที่เลือกตรงนี้ ตัวอย่างข้างล่าง
-            "Saber",
-            "Buddy Sword"
+            "Saber"
         }
     }
 }
