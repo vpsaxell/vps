@@ -11,7 +11,7 @@ _G.WebHook = {
     ["Delay"] = 60 -- วินาที
 }
 _G.MainSettings = {
-        ["EnabledHOP"] = true, -- เปิด HOP ( มันไม่มีอยู่ละใส่มาเท่ๆ )
+        ["EnabledHOP"] = false, -- เปิด HOP ( มันไม่มีอยู่ละใส่มาเท่ๆ )
         ['FPSBOOST'] = false, -- ภาพกาก
         ["FPSLOCKAMOUNT"] = 30, -- จำนวน FPS
         ['WhiteScreen'] = false, -- จอขาว
