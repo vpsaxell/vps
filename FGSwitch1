@@ -32,11 +32,11 @@ function PlayerInsert()
     end
 end
 
-repeat task.wait() until #game:GetService("Players"):GetPlayers() >= 1
+repeat task.wait() until #game:GetService("Players"):GetPlayers() >= 3
 
 PlayerInsert()
 
-if #_G.Setting["Evo Race V4"]['Farm'] >= 6 then
+if #_G.Setting["Evo Race V4"]['Farm'] >= 1 then
   print("Kondisi terpenuhi")
      
   script_key="xrxpyIsEePaEBOoBvsWVasURDdmqUhDJ";
