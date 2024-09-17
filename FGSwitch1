@@ -2,8 +2,8 @@ if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
 
 _G.Setting = {
     ['Evo Race V4'] = { -- Setting Team / ตั้งค่าทีม
-        ['Helper'] = "PpGrmYKceMz", -- Helper
-        ['Helper2'] = "zHEYIccDZls", -- Helper2
+        ['Helper'] = "PpGrmYKceMz", -- Helper / ผู้ช่วย
+        ['Helper2'] = "zHEYIccDZls", -- Helper2 / ผู้ช่วยคนที่ 2
         ['Farm'] = { } 
     },
     -- Booster
@@ -12,7 +12,7 @@ _G.Setting = {
 }
 
 local function IsPlayerInList(name)
-    for _, playerName in pairs(_G.Setting["Farm"]) do
+    for _, playerName in pairs(_G.Setting["Evo Race V4"]['Farm']) do
         if playerName == name then
             return true
         end
@@ -20,11 +20,25 @@ local function IsPlayerInList(name)
     return false
 end
 
-repeat task.wait() until #game:GetService("Players"):GetPlayers() >= 8
+function PlayerInsert()
+    for _, v in pairs(game:GetService("Players"):GetChildren()) do
+        if v:IsA("Player") then
+            if v.Name ~= _G.Setting["Evo Race V4"]['Helper'] and v.Name ~= _G.Setting["Evo Race V4"]['Helper2'] then
+                if not IsPlayerInList(v.Name) then
+                    table.insert(_G.Setting["Evo Race V4"]['Farm'], v.Name)
+                end
+            end
+        end
+    end
+end
+
+repeat task.wait() until #game:GetService("Players"):GetPlayers() >= 6
 
 PlayerInsert()
 
-if #_G.Setting["Farm"] >= 6 then
-
-script_key="xrxpyIsEePaEBOoBvsWVasURDdmqUhDJ";
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/2d1ebc6b47e1b9c4e34c97898f9b7c4b.lua"))()
+if #_G.Setting["Evo Race V4"]['Farm'] >= 6 then
+  print("Kondisi terpenuhi")
+     
+  script_key="xrxpyIsEePaEBOoBvsWVasURDdmqUhDJ";
+  loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/2d1ebc6b47e1b9c4e34c97898f9b7c4b.lua"))()
+end
