@@ -1,5 +1,3 @@
-if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
-
-_G.Save_Setting = true -- Save Setting
-script_key = "bsWTjPJLqcDHzuUdYKjNWztXufGiOEXo";
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/58328ea2259c450ea64a10414568a7dc.lua"))()
+repeat wait() until game:IsLoaded() and game.Players.LocalPlayer 
+getgenv().Key = "9c3329abb8b3f1872d7ca524" 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BananaHub.lua"))() 
