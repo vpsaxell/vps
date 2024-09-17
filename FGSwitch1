@@ -2,8 +2,8 @@ if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
 
 _G.Setting = {
     ['Evo Race V4'] = { -- Setting Team / ตั้งค่าทีม
-        ['Helper'] = "PpGrmYKceMz", -- Helper / ผู้ช่วย
-        ['Helper2'] = "zHEYIccDZls", -- Helper2 / ผู้ช่วยคนที่ 2
+        ['Helper'] = "PpGrmYKceMz", -- Helper
+        ['Helper2'] = "zHEYIccDZls", -- Helper2
         ['Farm'] = { } 
     },
     -- Booster
