@@ -32,7 +32,7 @@ function PlayerInsert()
     end
 end
 
-repeat task.wait() until #game:GetService("Players"):GetPlayers() >= 6
+repeat task.wait() until #game:GetService("Players"):GetPlayers() >= 1
 
 PlayerInsert()
 
