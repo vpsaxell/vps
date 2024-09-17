@@ -1,0 +1,34 @@
+if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
+
+_G.Setting = {
+    ['Evo Race V4'] = { -- Setting Team / ตั้งค่าทีม
+        ['Helper'] = "NameA1", -- Helper / ผู้ช่วย
+        ['Helper2'] = "NameA2", -- Helper2 / ผู้ช่วยคนที่ 2
+        ['Farm'] = { -- Farming V4 / ตัวที่ต้องการทำ V4
+            "NameA3",
+            "NameA4",
+            "NameA5"
+        } 
+    },
+    -- Booster
+    ['White Screen'] = true, 
+    ['FPS Booster'] = true 
+}
+
+local function IsPlayerInList(name)
+    for _, playerName in pairs(_G.Setting["Farm"]) do
+        if playerName == name then
+            return true
+        end
+    end
+    return false
+end
+
+repeat task.wait() until #game:GetService("Players"):GetPlayers() >= 8
+
+PlayerInsert()
+
+if #_G.Setting["Farm"] >= 6 then
+
+script_key="xrxpyIsEePaEBOoBvsWVasURDdmqUhDJ";
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/2d1ebc6b47e1b9c4e34c97898f9b7c4b.lua"))()
