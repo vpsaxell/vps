@@ -7,7 +7,7 @@ _G.Setting = {
         ['Farm'] = { } 
     },
     -- Booster
-    ['White Screen'] = false, 
+    ['White Screen'] = true, 
     ['FPS Booster'] = false 
 }
 
