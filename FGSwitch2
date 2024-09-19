@@ -23,9 +23,9 @@ end
 function PlayerInsert()
     for _, v in pairs(game:GetService("Players"):GetChildren()) do
         if v:IsA("Player") then
-            if v.Name ~= _G.Setting["Evo Race V4"]['Helper'] and v.Name ~= _G.Setting["Evo Race V4"]['Helper2'] then
+            if v.Name ~= _G.Setting['Helper'] and v.Name ~= _G.Setting['Helper2'] then
                 if not IsPlayerInList(v.Name) then
-                    table.insert(_G.CrewSettings["Farm"], v.Name)
+                    table.insert(_G.Setting["Farm"], v.Name)
                 end
             end
         end
