@@ -25,7 +25,7 @@ function PlayerInsert()
         if v:IsA("Player") then
             if v.Name ~= _G.Setting["Evo Race V4"]['Helper'] and v.Name ~= _G.Setting["Evo Race V4"]['Helper2'] then
                 if not IsPlayerInList(v.Name) then
-                    table.insert(_G.CrewSettings["Farm"], v.Name)
+                    table.insert(_G.Setting["Farm"], v.Name)
                 end
             end
         end
