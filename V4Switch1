@@ -2,12 +2,12 @@ if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
 
 _G.Setting = {
     ['Evo Race V4'] = { -- Setting Team / ตั้งค่าทีม
-        ['Helper'] = "burnaxell", -- Helper / ผู้ช่วย
-        ['Helper2'] = "CwasNCMhwSN", -- Helper2 / ผู้ช่วยคนที่ 2
+        ['Helper'] = "zHEYIccDZls", -- Helper / ผู้ช่วย
+        ['Helper2'] = "PpGrmYKceMz", -- Helper2 / ผู้ช่วยคนที่ 2
         ['Farm'] = { } 
     },
     -- Booster
-    ['White Screen'] = true, 
+    ['White Screen'] = false, 
     ['FPS Booster'] = false 
 }
 
@@ -39,6 +39,6 @@ PlayerInsert()
 if #_G.Setting["Evo Race V4"]['Farm'] >= 13 then
   print("Kondisi terpenuhi")
      
-  script_key="xrxpyIsEePaEBOoBvsWVasURDdmqUhDJ";
+  script_key="pNWONOhlIViHtYccoBhSyvGZApZaWGJv";
   loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/2d1ebc6b47e1b9c4e34c97898f9b7c4b.lua"))()
 end
