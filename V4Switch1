@@ -1,18 +1,46 @@
-if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
+_G.V4Config = { 
+    ['Auto Race V4'] = { -- open auto evo race v4
+        ["Enable"] = true,
+        ["Kick When Tier"] = true,
+        ["Custom Tier"] = 10,
+        ["Kick When Tier 10"] = false,
+        ["ignore wait"] = false, -- skip wait for main acc join or help acc join
+        ["Helper Gear Change"] = true, -- will change gear for helper if can't help other
+        ['Helper'] = { -- Put Only 3 diff Race / ใส่เเค่ 3 เผ่า ที่ต่างกัน (Only 3 Acc!!!)
+            "burnaxell",
+            "",
+},
 
-_G.Setting = {
-    ['Evo Race V4'] = { -- Setting Team / ตั้งค่าทีม
-        ['Helper'] = "zHEYIccDZls", -- Helper / ผู้ช่วย
-        ['Helper2'] = "PpGrmYKceMz", -- Helper2 / ผู้ช่วยคนที่ 2
-        ['Farm'] = { } 
+        ['Main Acc'] = { }
     },
-    -- Booster
-    ['White Screen'] = false, 
-    ['FPS Booster'] = false 
+
+    ['Auto Pull Lever'] = { -- auto pull lever / ดึงคันโยก auto
+        ['Enable'] = false,
+        ['Hop Server'] = false
+    },
+    
+    ['Auto Race V3'] = { -- Auto Evo Race V3 / ทำเผ่าวี3 
+        ["Enable"] = false,
+        ["Raids For Fragment"] = true, -- but if u have right race or fragment is better
+        ["Select Race"] = { -- Change Race To Farm / เปลี่ยนเผ่าไปทำเผ่านั้น (Check Ur Money And Fragment Too / ดูเงินกับ fragment ว่าพอมั้ยด้วย)
+            ['Mink'] = {},
+            ['Human'] = {},
+            ['Fishman'] = {game.Players.LocalPlayer.Name},
+            ['Skypiea'] = {},
+            --["Cybrog"] = {}, -- not woring, will do soon
+            --['Ghoul'] = {} -- not woring, will do soon
+        },
+    },
+    
+
+    -- [[ Misc ]]
+
+    ['Close Ui'] = true,
+    ['Low Texture'] = false
 }
 
 local function IsPlayerInList(name)
-    for _, playerName in pairs(_G.Setting["Evo Race V4"]['Farm']) do
+    for _, playerName in pairs(_G.V4Config['Auto Race V4']['Main Acc']) do
         if playerName == name then
             return true
         end
@@ -23,22 +51,22 @@ end
 function PlayerInsert()
     for _, v in pairs(game:GetService("Players"):GetChildren()) do
         if v:IsA("Player") then
-            if v.Name ~= _G.Setting['Helper'] and v.Name ~= _G.Setting['Helper2'] then
+            if v.Name ~= _G.V4Config['Auto Race V4']['Helper'] then
                 if not IsPlayerInList(v.Name) then
-                    table.insert(_G.Setting["Farm"], v.Name)
+                    table.insert(_G.V4Config['Auto Race V4']['Main Acc'], v.Name)
                 end
             end
         end
     end
 end
 
-repeat task.wait() until #game:GetService("Players"):GetPlayers() >= 13
+repeat task.wait() until #game:GetService("Players"):GetPlayers() >= 3
 
 PlayerInsert()
 
-if #_G.Setting["Evo Race V4"]['Farm'] >= 13 then
-  print("Kondisi terpenuhi")
-     
-  script_key="pNWONOhlIViHtYccoBhSyvGZApZaWGJv";
-  loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/2d1ebc6b47e1b9c4e34c97898f9b7c4b.lua"))()
-end
+if #_G.V4Config['Auto Race V4']['Main Acc'] >= 0 then
+ print("Kondisi terpenuhi")
+
+_G.Key = "WDP9I-PH72G-98P91"
+_G.DiscordId = "1197947995338059917"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Natsuhanaki/Royx_PC/main/loader.lua"))();
