@@ -11,8 +11,8 @@ getgenv().FpsCap = 30
         RedeemCode=true,
         Sea2KeyHop=true,
         FruitEat = { --Priority, Name, 
-            [1] = {"Ice-Ice","Magma-Magma","Flame-Flame",},
-            [2] = {}
+            [1] = {"Kitsune-Kitsune","Leopard-Leopard","Dough-Dough",},
+            [2] = {"Ice-Ice","Magma-Magma","Flame-Flame",}
         },
         EatFruitFromStorage = false,
         SnipeFruit = true,
