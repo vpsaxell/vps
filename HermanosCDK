@@ -1,0 +1,16 @@
+repeat task.wait() until game:IsLoaded()
+getgenv().Hermanos_Settings = {
+	['key'] = 'f830ff6e-2580-4cce-9713-d5741748d5c1',
+	['PC'] = 'Hermanos CDK',
+
+	['webhooks'] = {
+		['fullmoon'] = 'https://discord.com/api/webhooks/1284557708598575206/SwxYGaqmXRbskfzdgYuEOh7LhX6mEULHA9rj0Qq1OvSELNG27dDiJPkPQFCmD1hhvuW4',
+		['mirage'] = 'https://discord.com/api/webhooks/1284557574712328253/MLDBHAmFSWO1cFPdENOm0dXV8zwKlqGOLXhtEbXdQ1_MRcb5m9ItuwIlhDpOIu-WuiGE',
+	},
+
+	['Sword'] = {'Cursed Dual Katana', 'Shark Anchor', 'Hallow Scythe', 'True Triple Katana'},
+	['Gun'] = {'Soul Guitar'},
+	['Accessories'] = {'Dark Coat'},
+	['Fruit'] = {'Kitsune', 'Leopard', 'Portal', 'Dragon', 'Spirit', 'Control', 'Venom', 'Shadow', 'Dough', 'Mammoth', 'T-Rex', 'Buddha', 'Gravity'},
+}
+task.spawn(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/hermanos-dev/hermanos-script/main/script.lua'))() end)
