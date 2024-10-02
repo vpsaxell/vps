@@ -1,3 +1,4 @@
+script_key = "gONRxQWAMechadzPNtMPxmVOyuhqiKOj"
 getgenv().SetFpsCap = false
 getgenv().FpsCap = 10
 getgenv().OneClickUi = true -- Only Open Necessacry Ui For One Click
@@ -33,5 +34,4 @@ getgenv().FpsBoost1 = false
         ["Shark Anchor"] = true,
     }
 getgenv().Team = "Pirates"
-getgenv().AutoLoad = false --Will Load Script On Server Hop
- loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/vinhuchi/rblx/main/W-azure/BloxFruit/OneClickLoader.lua"))() 
