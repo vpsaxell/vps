@@ -5,7 +5,7 @@ getgenv().Hermanos_Settings = {
 
 	['webhooks'] = {
 		['fullmoon'] = 'https://discord.com/api/webhooks/1284557708598575206/SwxYGaqmXRbskfzdgYuEOh7LhX6mEULHA9rj0Qq1OvSELNG27dDiJPkPQFCmD1hhvuW4',
-		['mirage'] = 'https://discord.com/api/webhooks/1284557574712328253/MLDBHAmFSWO1cFPdENOm0dXV8zwKlqGOLXhtEbXdQ1_MRcb5m9ItuwIlhDpOIu-WuiGE',
+		['mirage'] = 'https://discord.com/api/webhooks/1288314329409519678/2Tp2dk6UcD-wTZdxRTCZYKVC_3t7ZKvNmR8o1g-YQ_Eve88vD9j51SFgXTy8HKjNDRX0',
 	},
 
 	['Sword'] = {'Cursed Dual Katana', 'Shark Anchor', 'Hallow Scythe', 'True Triple Katana'},
