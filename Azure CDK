@@ -1,0 +1,37 @@
+script_key = "gONRxQWAMechadzPNtMPxmVOyuhqiKOj"
+getgenv().SetFpsCap = false 
+getgenv().FpsCap = 30
+    getgenv().UiCheckItems = false
+    getgenv().WhiteScreen = false
+    getgenv().OneClickSetting = {
+        Enable=true,
+        UnlimitGetQuest=true,
+        TripleQuest=true,
+        AutoAddStats=true,
+        RedeemCode=true,
+        Sea2KeyHop=true,
+        FruitEat = { --Priority, Name, 
+            [1] = {"Kitsune-Kitsune","Leopard-Leopard","Dough-Dough",},
+            [2] = {"Ice-Ice","Magma-Magma","Flame-Flame",}
+        },
+        EatFruitFromStorage = false,
+        SnipeFruit = true,
+        SnipeFruitMirage = true,
+        HopIfFoundNearExploiter = false,
+        HopHakiColor =false,
+        HopTushita = false,
+        HopValkyriehelm = false,
+        HopMirrorFractal=false,
+        FarmPole = false, -- Turn off If Want Focus Level
+        FarmItems = true, --Turn off If Want Focus Level And CDK, THis Only get After You Get God Human
+        DisableSoulGuitar = false,
+        DisableCDK = false,
+        DisableRaceEvolve = false,
+         RollRace={
+            Enable = true,
+            Races = {"Mink","Fishman","Skypiea"}
+        },
+       MinFragment = 20000, --Farm After Max Level
+    }
+getgenv().Team = "Pirates"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/vinhuchi/rblx/main/W-azure/BloxFruit/OneClickLoader.lua"))() 
