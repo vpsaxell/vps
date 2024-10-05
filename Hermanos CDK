@@ -11,6 +11,6 @@ getgenv().Hermanos_Settings = {
 	['Sword'] = {'Cursed Dual Katana', 'Shark Anchor', 'Hallow Scythe', 'True Triple Katana'},
 	['Gun'] = {'Soul Guitar'},
 	['Accessories'] = {'Dark Coat'},
-	['Fruit'] = {'Kitsune', 'Leopard', 'Dragon', 'Spirit', 'Control', 'Venom', 'Shadow', 'Dough', 'Mammoth', 'T-Rex', 'Buddha', 'Gravity'},
+	['Fruit'] = {'Kitsune', 'Leopard', 'Dragon', 'Spirit', 'Control', 'Venom', 'Shadow', 'Dough', 'Mammoth', 'T-Rex', 'Buddha', 'Gravity', 'Portal'},
 }
 task.spawn(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/hermanos-dev/hermanos-script/main/script.lua'))() end)
