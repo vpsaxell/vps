@@ -1,0 +1,27 @@
+_G.CrewSettings = {
+    ["OwnBoat"] = "burnaxell", -- ชื่อคนที่มีเรือสำหรับดึงหัวใจ
+    ["Method"] = "SanguineArt", -- SanguineArt, CraftBoat
+    ['UseSkill'] = {
+        ['Z'] = true,
+        ['X'] = true,
+        ['C'] = true,
+        ['V'] = true
+    },
+    ["CrewMember"] = {
+"valeriefisher861",
+"jillhunter150",
+"floreskelly9",
+"sue7512",
+"stephanie80433",
+"vchapman533",
+"johnhernandez094",
+"jkr75276",
+"timothykramer1 ",
+"dobramu900",
+"pampezi709"
+
+    }
+}
+getgenv().Key = "MARU_NewM-EZE30BIBPA3GD52"
+getgenv().id = "852880409494552646"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MasterPClient/main/LoaderxP.lua"))()
