@@ -1,3 +1,16 @@
-repeat wait() until game:IsLoaded() and game.Players.LocalPlayer 
-getgenv().Key = "06266111c2c1dc267de6a7c5" 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BananaHub.lua"))()
+if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
+
+_G.Setting = {
+    ['Evo Race V3'] = true, -- Auto Evo Race V3 / ???????? 3
+    ['Change Race'] = { -- Setting Change Race / ????????????????????????????????
+        ['Mink'] = {""},
+        ['Human'] = {""},
+        ['Skypiea'] = {""},
+        ['Fishman'] = {""}
+    },
+    -- Booster
+    ['White Screen'] = false, 
+    ['FPS Booster'] = false
+}
+script_key="pNWONOhlIViHtYccoBhSyvGZApZaWGJv";
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/2d1ebc6b47e1b9c4e34c97898f9b7c4b.lua"))()
