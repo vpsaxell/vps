@@ -6,7 +6,7 @@ _G.Setting = {
         ['Mink'] = {""},
         ['Human'] = {""},
         ['Skypiea'] = {""},
-        ['Fishman'] = {""}
+        ['Fishman'] = {"true"}
     },
     -- Booster
     ['White Screen'] = false, 
