@@ -1,48 +1,16 @@
-_G.V4Config = { 
-    ['Auto Race V4'] = { -- open auto evo race v4
-        ["Enable"] = false,
-        ["Kick When Tier"] = false,
-        ["Custom Tier"] = 10,
-        ["Kick When Tier 10"] = false,
-        ["ignore wait"] = false, -- skip wait for main acc join or help acc join
-        ["Helper Gear Change"] = true, -- will change gear for helper if can't help other
-        ['Helper'] = { -- Put Only 3 diff Race / ใส่เเค่ 3 เผ่า ที่ต่างกัน (Only 3 Acc!!!)
-            "",
-            "",
-            "", -- u can put 2 if u make sure main acc not have same race (สามารใส่ 2 ตัวได้ถ้าใส่ตัวฟามไม่มีตัวเผ่าเหมือนกัน)
-        },
+if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
 
-        ['Main Acc'] = { 
-            '', -- put ur acc
-            '', -- put ur acc
-            '' -- put ur acc
-        }
+_G.Setting = {
+    ['Evo Race V3'] = true, -- Auto Evo Race V3 / ???????? 3
+    ['Change Race'] = { -- Setting Change Race / ????????????????????????????????
+        ['Mink'] = {"true"},
+        ['Human'] = {""},
+        ['Skypiea'] = {"true"},
+        ['Fishman'] = {"true"}
     },
-
-    ['Auto Pull Lever'] = { -- auto pull lever / ดึงคันโยก auto
-        ['Enable'] = false,
-        ['Hop Server'] = false
-    },
-    
-    ['Auto Race V3'] = { -- Auto Evo Race V3 / ทำเผ่าวี3 
-        ["Enable"] = true,
-        ["Raids For Fragment"] = true, -- but if u have right race or fragment is better
-        ["Select Race"] = { -- Change Race To Farm / เปลี่ยนเผ่าไปทำเผ่านั้น (Check Ur Money And Fragment Too / ดูเงินกับ fragment ว่าพอมั้ยด้วย)
-            ['Mink'] = {game.Players.LocalPlayer.Name},
-            ['Human'] = {},
-            ['Fishman'] = {},
-            ['Skypiea'] = {},
-            --["Cybrog"] = {}, -- not woring, will do soon
-            --['Ghoul'] = {} -- not woring, will do soon
-        },
-    },
-    
-
-    -- [[ Misc ]]
-
-    ['Close Ui'] = true,
-    ['Low Texture'] = false
+    -- Booster
+    ['White Screen'] = false, 
+    ['FPS Booster'] = false
 }
-_G.Key = "WDP9I-PH72G-98P91"
-_G.DiscordId = "1197947995338059917"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Natsuhanaki/Royx_PC/main/loader.lua"))();
+script_key="pNWONOhlIViHtYccoBhSyvGZApZaWGJv";
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/2d1ebc6b47e1b9c4e34c97898f9b7c4b.lua"))()
